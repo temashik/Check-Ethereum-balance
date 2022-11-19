@@ -5,6 +5,7 @@ import { TYPES } from '../types';
 import { IWalletService } from '../wallet/wallet.service.interface';
 import { IShowBalanceJob } from './showBalance.job.interface';
 import fs from 'fs/promises';
+import fsSync from 'fs';
 
 @injectable()
 export class ShowBalanceJob implements IShowBalanceJob {
