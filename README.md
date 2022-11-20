@@ -17,6 +17,7 @@ Because this is web-server, you run this application via Postman, or any analog 
 ```
 {
 	"address": "*wallet_address*"
-}```
+}
+```
 It will redirect you to GET endpoint (as mention in task) and return in response current balance of this wallet. After entering a new wallet address, config file will be rewrote and a new file with name ```resultWALLET_ADDRESS``` will appear in the ```/job_result``` folder.
 Sceduled job executes every minute based on the system time (when the seconds value changes from 59 to 0).
