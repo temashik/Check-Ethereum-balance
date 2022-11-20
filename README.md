@@ -14,7 +14,8 @@ Test project, which display balance of Ehtereum native token and all ERC-20 toke
 2. Run ```npm run start```.
 ## How to launch application
 Because this is web-server, you run this application via Postman, or any analog (I prefer Insomnia). You need to create a POST request, specifying the address field in its body with a value equal to the wallet address:
-```{
+```
+{
 	"address": "*wallet_address*"
 }```
 It will redirect you to GET endpoint (as mention in task) and return in response current balance of this wallet. After entering a new wallet address, config file will be rewrote and a new file with name ```resultWALLET_ADDRESS``` will appear in the ```/job_result``` folder.
