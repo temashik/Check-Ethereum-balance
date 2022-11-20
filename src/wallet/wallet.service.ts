@@ -9,7 +9,7 @@ import 'dotenv/config';
 export class WalletService implements IWalletService {
 	async getTokens(walletAddress: string): Promise<object> {
 		const web3ApiKey = process.env.MORALIS_API;
-		const web3 = new Web3(process.env.INFURA_API || 'http://localhost:8546');
+		const web3 = new Web3(process.env.ETHEREUM_NODE || 'http://localhost:8546');
 		const tokens = new Map();
 		tokens.set('timestamp', new Date());
 		tokens.set('Etherium native token balance', web3.utils.fromWei(await web3.eth.getBalance(walletAddress), 'ether'));
