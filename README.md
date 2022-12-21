@@ -1,4 +1,4 @@
-# Check-Etherium-balance
+# Check-Ethereum-balance
 Test project, which display balance of Ehtereum native token and all ERC-20 tokens with their name and amount for given address.
 ## Installation
 1. Clone this repo.
